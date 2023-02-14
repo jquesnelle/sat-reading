@@ -7,9 +7,9 @@ import sys
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--raw_data", type=str, default="raw-data",
+    parser.add_argument("--raw_data_dir", type=str, default="raw-data",
                         help="Path to raw data folder")
-    parser.add_argument("--output_file", type=str, default="outputs/combined-raw-data.json",
+    parser.add_argument("--output", type=str, default="outputs/combined-raw-data.json",
                         help="File to output")
 
     return parser.parse_args()
@@ -18,8 +18,8 @@ def parse_args():
 def main(args):
 
     result = {}
-    for test in os.listdir(args.raw_data):
-        test_path = os.path.join(args.raw_data, test)
+    for test in os.listdir(args.raw_data_dir):
+        test_path = os.path.join(args.raw_data_dir, test)
         if not os.path.isdir(test_path):
             continue
 
@@ -54,7 +54,7 @@ def main(args):
 
             result[test]['sections'].append(section)
 
-    json.dump(result, open(args.output_file, "w", encoding="utf-8"), indent=2)
+    json.dump(result, open(args.output, "w", encoding="utf-8"), indent=2)
 
 if __name__ == "__main__":
     sys.exit(main(parse_args()))
