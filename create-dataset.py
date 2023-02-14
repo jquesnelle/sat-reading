@@ -53,7 +53,7 @@ def create_dataset_for_keys(combined_raw_data: Dict, args: Any, keys: List[str],
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("name", type=str, help="Name of dataset")
+    parser.add_argument("dataset_name", type=str, help="Name of dataset")
     parser.add_argument("--output_dir", type=str, default="outputs",
                         help="Directory to output to")
     parser.add_argument("--combined_raw_data", type=str, default="outputs/combined-raw-data.json",
@@ -85,15 +85,15 @@ def main(args):
     if args.test is not None:
         keys.remove(args.test)
         create_dataset_for_keys(combined_raw_data, args, [args.test], os.path.join(
-            args.output_dir, args.name, "data", "test.jsonl"))
+            args.output_dir, args.dataset_name, "data", "test.jsonl"))
 
     if args.validation is not None:
         keys.remove(args.test)
         create_dataset_for_keys(combined_raw_data, args, [args.validation], os.path.join(
-            args.output_dir, args.name, "data", "valid.jsonl"))
+            args.output_dir, args.dataset_name, "data", "valid.jsonl"))
 
     create_dataset_for_keys(combined_raw_data, args, keys, os.path.join(
-        args.output_dir, args.name, "data", "train.jsonl"))
+        args.output_dir, args.dataset_name, "data", "train.jsonl"))
 
 
 if __name__ == "__main__":

@@ -56,5 +56,6 @@ def main(args):
 
     json.dump(result, open(args.output, "w", encoding="utf-8"), indent=2)
 
+
 if __name__ == "__main__":
     sys.exit(main(parse_args()))
