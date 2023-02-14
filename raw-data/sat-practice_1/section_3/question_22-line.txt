@@ -1,0 +1,5 @@
+The authors use the word “backbone” in lines 3 and 39 to indicate that
+A) only very long chains of DNA can be taken from an organism with a spinal column.
+*B) the main structure of a chain in a DNA molecule is composed of repeating units.
+C) a chain in a DNA molecule consists entirely of phosphate groups or of sugars.
+D) nitrogenous bases form the main structural unit of DNA.

@@ -1,0 +1,7 @@
+This passage is adapted from J. D. Watson and F. H. C. Crick,
+“Genetical Implications of the Structure of Deoxyribonucleic
+Acid.” ©1953 by Nature Publishing Group. Watson and Crick
+deduced the structure of DNA using evidence from Rosalind
+Franklin and R. G. Gosling’s X-ray crystallography diagrams
+of DNA and from Erwin Chargaff’s data on the base
+composition of DNA.

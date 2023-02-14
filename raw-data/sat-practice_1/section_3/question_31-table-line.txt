@@ -1,0 +1,5 @@
+Based on the table, is the percentage of adenine in each organism’s DNA the same or does it vary, and which statement made by the authors is most consistent with that data?
+A) The same; “Two of... pyrimidines” (lines 6-8)
+B) The same; “The important... structure” (lines 25-26)
+C) It varies; “Adenine... thymine” (lines 36-38)
+*D) It varies; “It follows... information” (lines 41-45)

@@ -1,0 +1,51 @@
+    The chemical formula of deoxyribonucleic acid
+(DNA) is now well established. The molecule is a
+very long chain, the backbone of which consists of a
+regular alternation of sugar and phosphate groups.
+To each sugar is attached a nitrogenous base, which
+can be of four different types. Two of the possible
+bases—adenine and guanine—are purines, and the
+other two—thymine and cytosine—are pyrimidines.
+So far as is known, the sequence of bases along the
+chain is irregular. The monomer unit, consisting of
+phosphate, sugar and base, is known as a nucleotide.
+    The first feature of our structure which is of
+biological interest is that it consists not of one chain,
+but of two. These two chains are both coiled around
+a common fiber axis. It has often been assumed that
+since there was only one chain in the chemical
+formula there would only be one in the structural
+unit. However, the density, taken with the X-ray
+evidence, suggests very strongly that there are two.
+    The other biologically important feature is the
+manner in which the two chains are held together.
+This is done by hydrogen bonds between the bases.
+The bases are joined together in pairs, a single base
+from one chain being hydrogen-bonded to a single
+base from the other. The important point is that only
+certain pairs of bases will fit into the structure.
+One member of a pair must be a purine and the other
+a pyrimidine in order to bridge between the two
+chains. If a pair consisted of two purines, for
+example, there would not be room for it.
+    We believe that the bases will be present almost
+entirely in their most probable forms. If this is true,
+the conditions for forming hydrogen bonds are more
+restrictive, and the only pairs of bases possible are:
+adenine with thymine, and guanine with cytosine.
+Adenine, for example, can occur on either chain; but
+when it does, its partner on the other chain must
+always be thymine.
+    The phosphate-sugar backbone of our model is
+completely regular, but any sequence of the pairs of
+bases can fit into the structure. It follows that in a
+long molecule many different permutations are
+possible, and it therefore seems likely that the precise
+sequence of bases is the code which carries the
+genetical information. If the actual order of the bases
+on one of the pair of chains were given, one could
+write down the exact order of the bases on the other
+one, because of the specific pairing. Thus one chain
+is, as it were, the complement of the other, and it is
+this feature which suggests how the deoxyribonucleic
+acid molecule might duplicate itself.
