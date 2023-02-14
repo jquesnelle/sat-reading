@@ -1,0 +1,5 @@
+Do the data in the table provide support for the authors’ claim that infection with varroa mites increases a honeybee’s susceptibility to secondary infections?
+A) Yes, because the data provide evidence that infection with a pathogen caused the colonies to undergo colony collapse disorder.
+B) Yes, because for each pathogen, the percent of colonies infected is greater for colonies with colony collapse disorder than for colonies without colony collapse disorder.
+C) No, because the data do not provide evidence about bacteria as a cause of colony collapse disorder.
+*D) No, because the data do not indicate whether the honeybees had been infected with mites.

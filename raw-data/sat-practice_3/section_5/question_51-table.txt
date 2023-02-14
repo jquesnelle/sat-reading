@@ -1,0 +1,5 @@
+Based on data in the table, which of the four pathogens infected the highest percentage of honeybee colonies without colony collapse disorder?
+A) IAPV
+B) KBV
+C) Nosema apis
+*D) Nosema ceranae

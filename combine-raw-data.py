@@ -36,6 +36,15 @@ def main(args):
                 'passages': [open(os.path.join(
                     section_path, f"passage_{i}.txt"), "r", encoding="utf-8").read() for i in range(1, len(glob.glob(
                         os.path.join(section_path, "passage_*.txt"))) + 1)],
+                'tables': [open(os.path.join(
+                    section_path, f"table_{i}.txt"), "r", encoding="utf-8").read() for i in range(1, len(glob.glob(
+                        os.path.join(section_path, "table_*.txt"))) + 1)],
+                'graphs': [open(os.path.join(
+                    section_path, f"graph_{i}.txt"), "r", encoding="utf-8").read() for i in range(1, len(glob.glob(
+                        os.path.join(section_path, "graph_*.txt"))) + 1)],
+                'figures': [open(os.path.join(
+                    section_path, f"figure_{i}.txt"), "r", encoding="utf-8").read() for i in range(1, len(glob.glob(
+                        os.path.join(section_path, "figure_*.txt"))) + 1)],
                 'context': open(os.path.join(section_path, "context.txt"), "r", encoding="utf-8").read()
             }
 

@@ -13,6 +13,8 @@ def create_dataset_for_keys(combined_raw_data: Dict, args: Any, keys: List[str],
             header = f"SAT READING COMPREHENSION TEST\n\n{section['context']}\n\n"
             offset = 1
             for i in range(0, len(section['passages'])):
+                if i > 0:
+                    header += "\n\n"
                 if len(section['passages']) > 1:
                     header += f"Passage {i + 1}\n"
 
@@ -22,13 +24,29 @@ def create_dataset_for_keys(combined_raw_data: Dict, args: Any, keys: List[str],
                         [f"{str(index + offset).rjust(3, ' ')}{line}" for index, line in enumerate(passage.split('\n'))])
                 elif args.line_numbers == 1:
                     passage = "\n".join(
-                        [f"{str(index + offset).rjust(3, ' ') if ((i + offset) % 5) == 0 else '   '}{line}" for index, line in enumerate(passage.split('\n'))])
+                        [f"{str(index + offset).rjust(3, ' ') if ((index + offset) % 5) == 0 else '   '}{line}" for index, line in enumerate(passage.split('\n'))])
 
-                if i > 0:
-                    header += "\n\n"
                 header += passage
 
                 offset += len(passage.split('\n'))
+
+            for i in range(0, len(section['tables'])):
+                header += "\n\n"
+                if len(section['tables']) > 1:
+                    header += f"Table {i + 1}\n"
+                header += f"{section['tables'][i]}"
+
+            for i in range(0, len(section['graphs'])):
+                header += "\n\n"
+                if len(section['graphs']) > 1:
+                    header += f"Graph {i + 1}\n"
+                header += f"{section['graphs'][i]}"
+
+            for i in range(0, len(section['figures'])):
+                header += "\n\n"
+                if len(section['figures']) > 1:
+                    header += f"Figure {i + 1}\n"
+                header += f"{section['figures'][i]}"
 
             for num, question in section['questions'].items():
                 if not args.include_previous and 'previous' in question['requires']:
@@ -37,11 +55,13 @@ def create_dataset_for_keys(combined_raw_data: Dict, args: Any, keys: List[str],
                     continue
                 if not args.include_table and 'table' in question['requires']:
                     continue
+                if not args.include_figure and 'figure' in question['requires']:
+                    continue
                 if not args.include_line and 'line' in question['requires']:
                     continue
                 answers = "\n".join(question['answers'])
                 data.append({
-                    'text': f"{header}\n\nQuestion {num}:\n{question['text']}\n{answers}\nAnswer:",
+                    'text': f"{header}\n\n\n\nQuestion {num}:\n{question['text']}\n{answers}\nAnswer:",
                     'answer': question['answer'],
                     'requires': question['requires']
                 })
@@ -70,6 +90,8 @@ def parse_args():
                         help="Include questions that depend on a graph")
     parser.add_argument("--include-table", type=bool, default=False,
                         help="Include questions that depend on a table")
+    parser.add_argument("--include-figure", type=bool, default=False,
+                        help="Include questions that depend on a figure")
     parser.add_argument("--include-line", type=bool, default=True,
                         help="Include questions that depend on a line number")
 

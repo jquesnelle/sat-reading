@@ -39,11 +39,6 @@ def model_args(args):
         raise RuntimeError(f"Unknown dtype {args.dtype}")
 
 
-def score(results, question, answer):
-    results['num_questions'] += 1
-    results['correct'] += 1 if question['answer'].upper() == answer.upper() else 0
-
-
 def new_results():
     def results():
         return {
@@ -55,8 +50,28 @@ def new_results():
         "all": results(),
         "line": results(),
         "graph": results(),
-        "data": results()
+        "table": results(),
+        "figure": results()
     }
+
+
+def score(results, question, answer):
+    results['num_questions'] += 1
+    results['correct'] += 1 if question['answer'].upper() == answer.upper() else 0
+
+
+def score_answer(results, question, answer):
+    answer = answer.strip()
+    if answer.startswith("Choice "):  # ada seems to do this sometimes
+        answer = answer[7:]
+
+    final_answer = answer[0] if len(answer) > 0 else ' '
+    if final_answer not in ['A', 'B', 'C', 'D']:
+        print(f"Unexpected answer format: {answer}")
+
+    score(results["all"], question, final_answer)
+    for requires in question["requires"]:
+        score(results[requires], question, final_answer)
 
 
 def run_transformers_model(dataset, tokenizer, model, generate_args, does_echo):
@@ -70,12 +85,8 @@ def run_transformers_model(dataset, tokenizer, model, generate_args, does_echo):
         answer = tokenizer.decode(outputs[0], skip_special_tokens=True)
         if does_echo:
             answer = answer[len(question["text"]):]
-        answer = answer.strip()
-        answer = answer[0] if len(answer) > 0 else ' '
 
-        score(results["all"], question, answer)
-        for requires in question["requires"]:
-            score(results[requires], question, answer)
+        score_answer(results, question, answer)
 
     return results
 
@@ -106,13 +117,11 @@ def oai(args):
     for question in tqdm(dataset):
         completion = openai.Completion.create(
             engine=args.model, prompt=question["text"], temperature=0)
-        answer = completion['choices'][0]['text'].strip()[0]
+        answer = completion['choices'][0]['text']
 
-        score(results["all"], question, answer)
-        for requires in question["requires"]:
-            score(results[requires], question, answer)
+        score_answer(results, question, answer)
 
-        time.sleep(3)  # you know... the rate limit...
+        time.sleep(1)  # you know... the rate limit...
 
     return results
 

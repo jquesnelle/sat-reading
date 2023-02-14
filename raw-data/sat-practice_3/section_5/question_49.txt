@@ -1,0 +1,5 @@
+An unstated assumption made by the authors about clover is that the plants
+*A) do not produce pyrethrums.
+B) are members of the Chrysanthemum genus.
+C) are usually located near wild-type honeybee colonies.
+D) will not be a good food source for honeybees in the control colonies.

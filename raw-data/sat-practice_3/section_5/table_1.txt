@@ -1,0 +1,17 @@
+\begin{tabular}{|l|c|c|}
+\hline & \multicolumn{2}{|c|}{$\begin{gathered}\text { Percent of colonies affected by } \\
+\text { pathogen }\end{gathered}$} \\
+\hline \multicolumn{1}{|c|}{ Pathogen } & $\begin{gathered}\text { Colonies with } \\
+\text { colony collapse } \\
+\text { disorder (\%) }\end{gathered}$ & $\begin{gathered}\text { Colonies without } \\
+\text { colony collapse } \\
+\text { disorder (\%) }\end{gathered}$ \\
+\hline Viruses \\
+IAPV & 83 & 5 \\
+KBV & 100 & 76 \\
+\hline Fungi \\
+Nosema apis & 90 & 48 \\
+Nosema ceranae & 100 & 81 \\
+\hline All four pathogens & 77 & 0 \\
+\hline
+\end{tabular}
