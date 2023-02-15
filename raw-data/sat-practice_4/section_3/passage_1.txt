@@ -1,0 +1,76 @@
+    When scientists first learned how to edit the
+genomes of animals, they began to imagine all the
+ways they could use this new power. Creating
+brightly colored novelty pets was not a high priority.
+Instead, most researchers envisioned far more
+consequential applications, hoping to create
+genetically engineered animals that saved human
+lives. One enterprise is now delivering on this dream.
+Welcome to the world of “pharming,” in which
+simple genetic tweaks turn animals into living
+pharmaceutical factories.
+    Many of the proteins that our cells crank out
+naturally make for good medicine. Our bodies’ own
+enzymes, hormones, clotting factors, and antibodies
+are commonly used to treat cancer, diabetes,
+autoimmune diseases, and more. The trouble is that
+it’s difficult and expensive to make these compounds
+on an industrial scale, and as a result, patients can
+face shortages of the medicines they need. Dairy
+animals, on the other hand, are expert protein
+producers, their udders swollen with milk. So the
+creation of the first transgenic animals—first mice,
+then other species—in the 1980s gave scientists an
+idea: What if they put the gene for a human antibody
+or enzyme into a cow, goat, or sheep? If they put the
+gene in just the right place, under the control of the
+right molecular switch, maybe they could engineer
+animals that produced healing human proteins in
+their milk. Then doctors could collect medicine by
+the bucketful.
+    Throughout the 1980s and ’90s, studies provided
+proof of principle, as scientists created transgenic
+mice, sheep, goats, pigs, cattle, and rabbits that did in
+fact make therapeutic compounds in their milk.
+At first, this work was merely gee-whiz, scientific
+geekery, lab-bound thought experiments come true.
+That all changed with ATryn, a drug produced by the
+Massachusetts firm GTC Biotherapeutics. ATryn is
+antithrombin, an anticoagulant that can be used to
+prevent life-threatening blood clots. The compound,
+made by our liver cells, plays a key role in keeping
+our bodies clot-free. It acts as a molecular bouncer,
+sidling up to clot-forming compounds and escorting
+them out of the bloodstream. But as many as 1 in
+2,000 Americans are born with a genetic mutation
+that prevents them from making antithrombin.
+These patients are prone to clots, especially in their
+legs and lungs, and they are at elevated risk of
+suffering from fatal complications during surgery
+and childbirth. Supplemental antithrombin can
+reduce this risk, and GTC decided to try to
+manufacture the compound using genetically
+engineered goats.
+    To create its special herd of goats, GTC used
+microinjection, the same technique that produced
+GloFish and AquAdvantage salmon. The company’s
+scientists took the gene for human antithrombin and
+injected it directly into fertilized goat eggs. Then they
+implanted the eggs in the wombs of female goats.
+When the kids were born, some of them proved to be
+transgenic, the human gene nestled safely in their
+cells. The researchers paired the antithrombin gene
+with a promoter (which is a sequence of DNA that
+controls gene activity) that is normally active in the
+goat’s mammary glands during milk production.
+When the transgenic females lactated, the promoter
+turned the transgene on and the goats’ udders filled
+with milk containing antithrombin. All that was left
+to do was to collect the milk, and extract and purify
+the protein. Et voilà—human medicine! And, for
+GTC, liquid gold. ATryn hit the market in 2006,
+becoming the world’s first transgenic animal drug.
+Over the course of a year, the “milking parlors” on
+GTC’s 300-acre farm in Massachusetts can collect
+more than a kilogram of medicine from a single
+animal.
