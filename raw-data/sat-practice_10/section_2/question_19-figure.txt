@@ -1,0 +1,5 @@
+According to figure 1, how many vehicles traveled on the altered road through the Southampton city center per day before the route was altered?
+A) 3,081
+*B) 5,316
+C) 24,101
+D) 26,522

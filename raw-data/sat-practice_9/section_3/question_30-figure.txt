@@ -1,0 +1,5 @@
+Which conclusion about the mean mass of guppy embryos is best supported by figure 2?
+A) The slope location was a better indicator of mean embryo mass than was the predation level observed in each environment.
+B) The mean embryo mass of guppies born in the north slope environments exceeded the mean embryo mass of guppies born in the south slope environments.
+*C) The predation level observed in each environment had more of an effect on mean embryo mass than did slope location.
+D) The guppies born in the low-predation environments had a mean embryo mass less than that of guppies born in the high-predation environments.

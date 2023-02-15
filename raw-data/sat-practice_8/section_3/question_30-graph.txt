@@ -1,0 +1,5 @@
+According to the information in the graph, when the microscope tip is moving away from the salt surface and is 15 nanometers from the surface, what is the approximate force on the microscope tip, in micronewtons?
+A) 0
+B) 0.25
+*C) 0.75
+D) 1.25

@@ -1,0 +1,24 @@
+Effect of Route Capacity Reduction in Selected Regions
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline \multicolumn{1}{|c|}{ Region } & \multicolumn{2}{|c|}{$\begin{gathered}\text { Vehicles per day } \\
+\text { on altered road }\end{gathered}$} & \multicolumn{2}{|c|}{$\begin{gathered}\text { Vehicles per day on } \\
+\text { surrounding roads }\end{gathered}$} & \multirow{2}{*}{$\begin{gathered}\text { Change } \\
+\text { in traffic }\end{gathered}$} \\
+\cline { 2 - 5 } & $\begin{gathered}\text { Before } \\
+\text { alteration }\end{gathered}$ & $\begin{gathered}\text { After } \\
+\text { alteration }\end{gathered}$ & $\begin{gathered}\text { Before } \\
+\text { alteration }\end{gathered}$ & $\begin{gathered}\text { After } \\
+\text { alteration }\end{gathered}$ & \\
+\hline $\begin{aligned} & \text { Rathausplatz, } \\
+& \text { Nürnberg }\end{aligned}$ & 24,584 & 0 & 67,284 & 55,824 & $-146.6 \%$ \\
+\hline $\begin{aligned} & \text { Southampton } \\
+& \text { city center }\end{aligned}$ & 5,316 & 3,081 & 26,522 & 24,101 & $-87.5 \%$ \\
+\hline $\begin{aligned} & \text { Tower Bridge, } \\
+& \text { London }\end{aligned}$ & 44,242 & 0 & 103,262 & 111,999 & $-80.3 \%$ \\
+\hline $\begin{aligned} & \text { New York } \\
+& \text { highway }\end{aligned}$ & 110,000 & 50,000 & 540,000 & 560,000 & $-36.4 \%$ \\
+\hline $\begin{aligned} & \text { Kinnaird Bridge, } \\
+& \text { Edmonton }\end{aligned}$ & 1,300 & 0 & 2,130 & 2,885 & $-41.9 \%$ \\
+\hline
+\end{tabular}
+${ }^*$ Change in regional traffic in proportion to traffic previously using the altered road

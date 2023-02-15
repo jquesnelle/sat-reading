@@ -1,0 +1,44 @@
+    Many good antibiotic families—penicillin,
+streptomycin, tetracycline—come from soil fungi
+and bacteria and it has long been suspected that, if
+we could grow more types of bacteria from soil—or
+from exotic environments, such as deep
+oceans—then we might find new natural antibiotics.
+In a recent study, researchers [Kim Lewis and others]
+found that they could isolate and grow individual soil
+bacteria—including types that can’t normally be
+grown in the laboratory—in soil itself, which
+supplied critical nutrients and minerals. Once the
+bacteria reached a critical mass they could be
+transferred to the lab and their cultivation continued.
+This simple and elegant methodology is their most
+important finding to my mind, for it opens a gateway
+to cultivating a wealth of potentially antibiotic-
+producing bacteria that have never been grown
+before.
+    The first new antibiotic that they’ve found by this
+approach, teixobactin, from a bacterium called
+Eleftheria terrae, is less exciting to my mind, though
+it doesn’t look bad. Teixobactin killed Gram-positive
+bacteria, such as S. aureus, in the laboratory, and
+cured experimental infection in mice. It also killed
+the tuberculosis bacterium, which is important
+because there is a real problem with resistant
+tuberculosis in the developing world. It was also
+difficult to select teixobactin resistance.
+    So, what are my caveats? Well, I see three. First,
+teixobactin isn’t a potential panacea. It doesn’t kill
+the Gram-negative opportunists as it is too big to
+cross their complex cell wall. Secondly, scaling to
+commercial manufacture will be challenging, since
+the bacteria making the antibiotic are so difficult to
+grow. And, thirdly, it’s early days yet. As with any
+antibiotic, teixobactin now faces the long haul of
+clinical trials: Phase I to see what dose you can safely
+give the patient, Phase II to see if it cures infections,
+and Phase III to compare its efficacy to that of
+“standard of care treatment.” That’s going to take
+five years and £500 million and these are numbers we
+must find ways to reduce (while not compromising
+safety) if we’re to keep ahead of bacteria, which can
+evolve far more swiftly and cheaply.

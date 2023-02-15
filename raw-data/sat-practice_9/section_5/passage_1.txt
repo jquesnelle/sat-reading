@@ -1,0 +1,50 @@
+    “Pathogens are acquiring resistance faster than we
+can introduce new antibiotics, and this is causing a
+human health crisis,” says biochemist Kim Lewis of
+Line Northeastern University.
+    Lewis is part of a team that recently unveiled a
+promising antibiotic, born from a new way to tap the
+powers of soil microorganisms. In animal tests,
+teixobactin proved effective at killing off a wide
+variety of disease-causing bacteria—even those that
+have developed immunity to other drugs. The
+scientists’ best efforts to create mutant bacteria with
+resistance to the drug failed, meaning teixobactin
+could function effectively for decades before
+pathogens naturally evolve resistance to it.
+    Natural microbial substances from soil bacteria
+and fungi have been at the root of most antibiotic
+drug development during the past century. But only
+about one percent of these organisms can be grown
+in a lab. The rest, in staggering numbers, have
+remained uncultured and of limited use to medical
+science, until now. “Instead of trying to figure out the
+ideal conditions for each and every one of the
+millions of organisms out there in the environment,
+to allow them to grow in the lab, we simply grow
+them in their natural environment where they
+already have the conditions they need for growth,”
+Lewis says.
+    To do this, the team designed a gadget that
+sandwiches a soil sample between two membranes,
+each perforated with pores that allow molecules like
+nutrients to diffuse through but don’t allow the
+passage of cells. “We just use it to trick the bacteria
+into thinking that they are in their natural
+environment,” Lewis says.
+    The team isolated 10,000 strains of uncultured soil
+bacteria and prepared extracts from them that could
+be tested against nasty pathogenic bacteria.
+Teixobactin emerged as the most promising drug.
+Mice infected with bacteria that cause upper
+respiratory tract infections (including Staphylococcus
+aureus and Streptococcus pneumoniae) were treated
+with teixobactin, and the drug knocked out the
+infections with no noticeable toxic effects.
+    It’s likely that teixobactin is effective because of
+the way it targets disease: The drug breaks down
+bacterial cell walls by attacking the lipid molecules
+that the cell creates organically. Many other
+antibiotics target the bacteria’s proteins, and the
+genes that encode those proteins can mutate to
+produce different structures.

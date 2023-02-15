@@ -1,0 +1,19 @@
+Number of Emerged Seedlings in Soil Samples
+One Month after Soil Was Disturbed
+\begin{tabular}{|c|l|c|c|}
+\hline \multirow{2}{*}{ Sample } & \multirow{2}{*}{ Source of soil } & \multicolumn{2}{|c|}{$\begin{gathered}\text { Number of emerged } \\
+\text { seedlings in soil } \\
+\text { disturbed in }\end{gathered}$} \\
+\cline { 3 - 4 } & & light & darkness \\
+\hline A & deciduous woods & 4 & 0 \\
+\hline B & deciduous woods & 2 & 1 \\
+\hline C & deciduous woods & 6 & 2 \\
+\hline D & conifer plantation & 8 & 3 \\
+\hline E & conifer plantation & 2 & 1 \\
+\hline F & tall-grass prairie & 5 & 1 \\
+\hline G & old pasture & 0 & 2 \\
+\hline H & old pasture & 2 & 1 \\
+\hline I & muck field & 14 & 2 \\
+\hline J & muck field & 5 & 3 \\
+\hline
+\end{tabular}

@@ -1,0 +1,63 @@
+    Inflexible old salt becomes a softy in the
+nanoworld, stretching like taffy to more than twice
+its length, researchers report. The findings may lead
+to new approaches for making nanowires that could
+end up in solar cells or electronic circuits. The work
+also suggests that these ultra-tiny salt wires may
+already exist in sea spray and large underground salt
+deposits.
+    “We think nanowires are special and go to great
+lengths to make them,” says study coauthor
+Nathan Moore of Sandia National Laboratories in
+Albuquerque. “Maybe they are more common than
+we think.”
+    Metals such as gold or lead, in which bonding
+angles are loosey-goosey, can stretch out at
+temperatures well below their melting points.
+But scientists don’t expect this superplasticity in a
+rigid, crystalline material like salt, Moore says.
+    This unusual behavior highlights that different
+forces rule the nanoworld, says theoretical physicist
+Krzysztof Kempa of Boston College. “Forget about
+gravity. It plays no role,” he says. Surface tension and
+electrostatic forces are much more important at this
+scale.
+    Moore and his colleagues discovered salt’s
+stretchiness accidently. They were investigating how
+water sticks to a surface such as salt and created a
+super-dry salt sample for testing. After cleaving a
+chunk of salt about the size of a sugar cube with a
+razor, the scientists guided a microscope that detects
+forces toward the surface. When the tip was far away
+there was no measured force, but within about seven
+nanometers a very strong attraction rapidly
+developed between the diamond tip of the
+microscope and the salt. The salt actually stretched
+out to glom on to the microscope tip. Using an
+electron microscope to see what was happening, the
+researchers observed the nanowires.
+    The initial attraction between the tip and salt
+might be due to electrostatic forces, perhaps good old
+van der Waals interactions, the researchers
+speculate. Several mechanisms might lead to the
+elasticity, including the excessive surface tension
+found in the nanoworld (the same tension that allows
+a water strider to skim the surface of a pond).
+    The surface tension is so strong that as the
+microscope pulls away from the salt, the salt
+stretches, Kempa says. “The inside has no choice but
+to rearrange the atoms, rather than break,” he says.
+    This bizarre behavior is actually mirrored in the
+macroworld, the researchers say. Huge underground
+deposits of salt can bend like plastic, but water is
+believed to play a role at these scales. Perhaps salty
+nanowires are present in these deposits as well.
+    “Sodium chloride is everywhere—in the air, in
+our bodies,” Moore says. “This may change our view
+of things, of what’s happening at the nanoscale.”
+    The work also suggests new techniques for
+making nanowires, which are often created through
+nano-imprinting techniques, Kempa says. “We
+invoke the intuition of the macroworld,” he says.
+“Maybe instead of stamping [nanowires] we should
+be nano-pulling them.”

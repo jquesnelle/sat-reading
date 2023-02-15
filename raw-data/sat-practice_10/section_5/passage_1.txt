@@ -1,0 +1,74 @@
+    Many millennia before the invention of
+herbicides, farmers simply plowed their fields to
+control weeds. Even today, plowing can constitute a
+Line valuable part of an integrated weed-management
+program. Although plowing kills standing weeds,
+farmers have long known that it often leads to the
+emergence of new weed seedlings in a few weeks.
+    Ecologists have shown that a farmer’s field can
+have 50,000 or more weed seeds per square meter
+buried beneath the soil surface. Plant physiologists
+have shown that seeds buried more than about one
+centimeter below the soil surface do not receive
+enough light to germinate. Do the blades of a plow,
+which can reach more than a foot beneath the soil
+surface, bring some of these buried seeds to the
+surface where their germination is induced by
+exposure to sunlight?
+    Two ecologists, Jonathan Sauer and Gwendolyn
+Struik, began to study this question in the 1960s. In a
+relatively simple experiment, they went to ten
+different habitats in Wisconsin during the night and
+collected pairs of soil samples. They stirred up the
+soil in one sample of each pair in the light and stirred
+up the other sample of each pair in the dark. They then
+exposed all ten pairs to natural sunlight in a
+greenhouse. For nine of the ten pairs of soil samples,
+weed growth was greater in the samples stirred up in
+light. They concluded that soil disturbance gives
+weed seeds a “light break,” and this stimulates their
+germination.
+    More recently, Karl Hartmann of Erlangen
+University in Germany reasoned that when farmers
+plowed their fields during the day, the buried weed
+seeds are briefly exposed to sunlight as the soil is
+turned over, and that this stimulates their
+germination. Although the light exposures from
+plowing may be less than one millisecond, that can
+be enough to induce seed germination. Thus the
+germination of weed seeds would be minimized if
+farmers simply plowed their fields during the night,
+when the photon fluence rate [the rate at which
+photons hit the surface] is below 10^15 photons per
+square meter per second. Although even under these
+conditions hundreds of millions of photons strike
+each square millimeter of ground each second, this
+illumination is below the threshold needed to
+stimulate the germination of most seeds.
+    Hartmann says that he was very skeptical when
+he first came up with this idea because he assumed
+that such a simple method of weed control as
+plowing at nighttime must be ineffective or it would
+have been discovered long ago. But the subsequent
+experiments, first presented at a 1989 scientific
+meeting in Freiburg, Germany, clearly demonstrated
+that the method can be effective.
+    Hartmann tested his idea by plowing two
+agricultural strips near Altershausen, Germany.
+The farmer Karl Seydel cultivated one strip, repeated
+threefold, at around midday and the other strip
+at night. No crops were planted in these pilot
+experiments, to avoid possible competition with
+the emerging weeds. The results were dramatic.
+More than 80 percent of the surface of the field
+plowed in daylight was covered by weeds, whereas
+only about 2 percent of the field plowed at night was
+covered by weeds.
+    This method of weed control is currently being
+used by several farmers in Germany. Because many
+of the same weed species that invade farmers’ fields
+in Germany also invade fields elsewhere in the world,
+this method should be successful elsewhere. In fact,
+recent studies at universities in Nebraska, Oregon,
+Minnesota, Denmark, Sweden, and Argentina
+support this idea.
