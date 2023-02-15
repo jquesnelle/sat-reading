@@ -1,0 +1,84 @@
+    Solar panel installations continue to grow quickly,
+but the solar panel manufacturing industry is in the
+doldrums because supply far exceeds demand. The
+poor market may be slowing innovation, but
+advances continue; judging by the mood this week at
+the IEEE Photovoltaics Specialists Conference in
+Tampa, Florida, people in the industry remain
+optimistic about its long-term prospects.
+    The technology that’s surprised almost everyone
+is conventional crystalline silicon. A few years ago,
+silicon solar panels cost $4 per watt, and
+Martin Green, professor at the University of
+New South Wales and one of the leading silicon solar
+panel researchers, declared that they’d never go
+below $1 a watt. “Now it’s down to something like
+50 cents a watt, and there’s talk of hitting 36 cents per
+watt,” he says.
+    The U.S. Department of Energy has set a goal of
+reaching less than $1 a watt—not just for the solar
+panels, but for complete, installed systems—by 2020.
+Green thinks the solar industry will hit that target
+even sooner than that. If so, that would bring the
+direct cost of solar power to six cents per
+kilowatt-hour, which is cheaper than the average cost
+expected for power from new natural gas power
+plants.
+    All parts of the silicon solar panel industry have
+been looking for ways to cut costs and improve the
+power output of solar panels, and that’s led to steady
+cost reductions. Green points to something as
+mundane as the pastes used to screen-print some of
+the features on solar panels. Green’s lab built a solar
+cell in the 1990s that set a record efficiency for silicon
+solar cells—a record that stands to this day. To
+achieve that record, he had to use expensive
+lithography techniques to make fine wires for
+collecting current from the solar cell. But gradual
+improvements have made it possible to use screen
+printing to produce ever-finer lines. Recent research
+suggests that screen-printing techniques can produce
+lines as thin as 30 micrometers—about the width of
+the lines Green used for his record solar cells, but at
+costs far lower than his lithography techniques.
+    Meanwhile, researchers at the National Renewable
+Energy Laboratory have made flexible solar cells on a
+new type of glass from Corning called Willow Glass,
+which is thin and can be rolled up. The type of solar
+cell they made is the only current challenger to
+silicon in terms of large-scale production—thin-film
+cadmium telluride. Flexible solar cells could lower
+the cost of installing solar cells, making solar power
+cheaper.
+    One of Green’s former students and colleagues,
+Jianhua Zhao, cofounder of solar panel manufacturer
+China Sunergy, announced this week that he is
+building a pilot manufacturing line for a two-sided
+solar cell that can absorb light from both the front
+and back. The basic idea, which isn’t new, is that
+during some parts of the day, sunlight falls on the
+land between rows of solar panels in a solar power
+plant. That light reflects onto the back of the panels
+and could be harvested to increase the power output.
+This works particularly well when the solar panels
+are built on sand, which is highly reflective. Where a
+one-sided solar panel might generate 340 watts, a
+two-sided one might generate up to 400 watts. He
+expects the panels to generate 10 to 20 percent more
+electricity over the course of a year.
+    Even longer-term, Green is betting on silicon,
+aiming to take advantage of the huge reductions in
+cost already seen with the technology. He hopes to
+greatly increase the efficiency of silicon solar panels
+by combining silicon with one or two other
+semiconductors, each selected to efficiently convert a
+part of the solar spectrum that silicon doesn’t convert
+efficiently. Adding one semiconductor could boost
+efficiencies from the 20 to 25 percent range to
+around 40 percent. Adding another could make
+efficiencies as high as 50 percent feasible, which
+would cut in half the number of solar panels needed
+for a given installation. The challenge is to produce
+good connections between these semiconductors,
+something made challenging by the arrangement of
+silicon atoms in crystalline silicon.

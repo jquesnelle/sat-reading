@@ -1,0 +1,83 @@
+    Nearly a half-century ago, Peter Higgs and a
+handful of other physicists were trying to understand
+the origin of a basic physical feature: mass. You can
+think of mass as an object’s heft or, a little more
+precisely, as the resistance it offers to having its
+motion changed. Push on a freight train (or a
+feather) to increase its speed, and the resistance you
+feel reflects its mass. At a microscopic level, the
+freight train’s mass comes from its constituent
+molecules and atoms, which are themselves built
+from fundamental particles, electrons and quarks.
+But where do the masses of these and other
+fundamental particles come from?
+    When physicists in the 1960s modeled the
+behavior of these particles using equations rooted in
+quantum physics, they encountered a puzzle. If they
+imagined that the particles were all massless, then
+each term in the equations clicked into a perfectly
+symmetric pattern, like the tips of a perfect
+snowflake. And this symmetry was not just
+mathematically elegant. It explained patterns evident
+in the experimental data. But—and here’s the
+puzzle—physicists knew that the particles did have
+mass, and when they modified the equations to
+account for this fact, the mathematical harmony was
+spoiled. The equations became complex and
+unwieldy and, worse still, inconsistent.
+    What to do? Here’s the idea put forward by Higgs.
+Don’t shove the particles’ masses down the throat of
+the beautiful equations. Instead, keep the equations
+pristine and symmetric, but consider them operating
+within a peculiar environment. Imagine that all of
+space is uniformly filled with an invisible
+substance—now called the Higgs field—that exerts a
+drag force on particles when they accelerate through
+it. Push on a fundamental particle in an effort to
+increase its speed and, according to Higgs, you would
+feel this drag force as a resistance. Justifiably, you
+would interpret the resistance as the particle’s mass.
+For a mental toehold, think of a ping-pong ball
+submerged in water. When you push on the
+ping-pong ball, it will feel much more massive than it
+does outside of water. Its interaction with the watery
+environment has the effect of endowing it with mass.
+So with particles submerged in the Higgs field.
+    In 1964, Higgs submitted a paper to a prominent
+physics journal in which he formulated this idea
+mathematically. The paper was rejected. Not because
+it contained a technical error, but because the
+premise of an invisible something permeating space,
+interacting with particles to provide their mass, well,
+it all just seemed like heaps of overwrought
+speculation. The editors of the journal deemed it “of
+no obvious relevance to physics.”
+    But Higgs persevered (and his revised paper
+appeared later that year in another journal), and
+physicists who took the time to study the proposal
+gradually realized that his idea was a stroke of genius,
+one that allowed them to have their cake and eat it
+too. In Higgs’s scheme, the fundamental equations
+can retain their pristine form because the dirty work
+of providing the particles’ masses is relegated to the
+environment.
+    While I wasn’t around to witness the initial
+rejection of Higgs’s proposal in 1964 (well, I was
+around, but only barely), I can attest that by the
+mid-1980s, the assessment had changed. The physics
+community had, for the most part, fully bought into
+the idea that there was a Higgs field permeating
+space. In fact, in a graduate course I took that
+covered what’s known as the Standard Model of
+Particle Physics (the quantum equations physicists
+have assembled to describe the particles of matter
+and the dominant forces by which they influence
+each other), the professor presented the Higgs field
+with such certainty that for a long while I had no idea
+it had yet to be established experimentally.
+On occasion, that happens in physics. Mathematical
+equations can sometimes tell such a convincing tale,
+they can seemingly radiate reality so strongly, that
+they become entrenched in the vernacular of
+working physicists, even before there’s data to
+confirm them.

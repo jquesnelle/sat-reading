@@ -1,0 +1,5 @@
+According to the figure, which category of news showed the smallest difference in mean score between artificially up-voted comments and control comments?
+A) Culture and society
+B) Information technology
+C) Fun
+*D) General news

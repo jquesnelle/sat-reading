@@ -1,0 +1,5 @@
+In the figure, which category of news has an artificially up-voted mean score of 2.5?
+A) Business
+*B) Politics
+C) Fun
+D) General news
