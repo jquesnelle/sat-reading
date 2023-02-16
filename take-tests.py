@@ -21,7 +21,7 @@ def parse_args():
     parser.add_argument("--split", type=str, help="Split to run on",
                         choices=['train', 'test', 'validation'], default='train')
     parser.add_argument("--result_file", type=str,
-                        help="Path to file to record results in", default="outputs/results.json")
+                        help="Path to file to record results in", default="outputs/test-results.json")
 
     return parser.parse_args()
 
