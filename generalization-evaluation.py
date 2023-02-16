@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
-# Copyright BigScience, The HuggingFace Team and The HuggingFace Inc. team. All rights reserved.
+# Copyright Jeffrey Quesnelle, BigScience, The HuggingFace Team and The HuggingFace Inc. team. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """
-Reproduce the main evaluation in `Multitask Prompted Training Enables Zero-Shot Task Generalization` using PyTorch.
-
-This script is heavily adapted from https://github.com/huggingface/transformers/blob/7533d30acd975027e83a548e4c38e06fa335291b/examples/pytorch/multiple-choice/run_swag_no_trainer.py
+This script is heavily adapted from https://github.com/bigscience-workshop/t-zero/blob/7a699e3ba15c1aeccf5b99cf2e2df3790f0dffce/evaluation/run_eval.py
 """
 
 import argparse
@@ -43,31 +41,94 @@ from promptsource.templates import DatasetTemplates
 from t0.data_collator import DataCollatorForMultipleChoice
 from t0.model import ModelBase
 
+template_list = {
+    ("super_glue", "rte"): [
+        "MNLI crowdsource",
+        "guaranteed true",
+        "can we infer",
+        "GPT-3 style",
+        "does this imply",
+        "should assume",
+        "does it follow that",
+        "based on the previous passage",
+        "justified in saying",
+        "must be true",
+    ],
+    ("super_glue", "cb"): [
+        "can we infer",
+        "based on the previous passage",
+        "claim true/false/inconclusive",
+        "does it follow that",
+        "justified in saying",
+        "always/sometimes/never",
+        "GPT-3 style",
+        "consider always/sometimes/never",
+        "guaranteed true",
+        "must be true",
+        "guaranteed/possible/impossible",
+        "does this imply",
+        "MNLI crowdsource",
+        "should assume",
+        "take the following as truth",
+    ],
+    ("super_glue", "wsc.fixed"): [
+        "does the pronoun refer to",
+        "by p they mean",
+        "in other words",
+        "I think they mean",
+        "does p stand for",
+        "GPT-3 Style",
+        "replaced with",
+        "p is/are r",
+        "the pronoun refers to",
+        "Who or what is/are",
+    ],
+    ("winogrande", "winogrande_xl"): [
+        "does underscore refer to",
+        "stand for",
+        "underscore refer to",
+        "fill in the blank",
+        "Replace",
+    ],
+    ("super_glue", "wic"): [
+        "question-context-meaning-with-label",
+        "question-context-meaning",
+        "grammar_homework",
+        "affirmation_true_or_false",
+        "GPT-3-prompt",
+        "same_sense",
+        "question-context",
+        "GPT-3-prompt-with-label",
+        "polysemous",
+        "similar-sense",
+    ],
+    ("hellaswag", None): [
+        "Predict ending with hint",
+        "Randomized prompts template",
+        "complete_first_then",
+        "if_begins_how_continues",
+    ],
+    ("super_glue", "copa"): [
+        "exercise",
+        "…What could happen next, C1 or C2?",
+        "i_am_hesitating",
+        "plausible_alternatives",
+        "C1 or C2? premise, so/because…",
+        "…As a result, C1 or C2?",
+        "best_option",
+        "…which may be caused by",
+        "more likely",
+        "cause_effect",
+        "…why? C1 or C2",
+        "choose",
+    ]
+}
+
 logger = logging.getLogger(__name__)
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Reproduce main evaluation in T0.")
-    parser.add_argument(
-        "--dataset_name",
-        type=str,
-        default=None,
-        help="The name of the dataset to use (via the datasets library).",
-        required=True,
-    )
-    parser.add_argument(
-        "--dataset_config_name",
-        type=str,
-        default=None,
-        help="The configuration name of the dataset to use (via the datasets library).",
-    )
-    parser.add_argument(
-        "--template_name",
-        type=str,
-        default=None,
-        help="The template/prompt name",
-        required=True,
-    )
+    parser = argparse.ArgumentParser()
     parser.add_argument(
         "--max_length",
         type=int,
@@ -156,7 +217,8 @@ def main():
 
     # Setup logging, we only want one process per machine to log things on the screen.
     # accelerator.is_local_main_process is only True for one process per machine.
-    logger.setLevel(logging.INFO if accelerator.is_local_main_process else logging.ERROR)
+    logger.setLevel(
+        logging.INFO if accelerator.is_local_main_process else logging.ERROR)
     if accelerator.is_local_main_process:
         datasets.utils.logging.set_verbosity_warning()
         transformers.utils.logging.set_verbosity_info()
@@ -164,31 +226,10 @@ def main():
         datasets.utils.logging.set_verbosity_error()
         transformers.utils.logging.set_verbosity_error()
 
-
     # Handle the output directory creation
     if accelerator.is_main_process:
         os.makedirs(args.output_dir, exist_ok=True)
     accelerator.wait_for_everyone()
-
-    # In distributed evaluation, the load_dataset function guarantee that only one local process can concurrently
-    # download the dataset.
-    if args.dataset_name is not None:
-        # Downloading and loading a dataset from the hub.
-        if args.dataset_name == "anli":
-            error_message = "For ANLI, `dataset_config_name` should be either `dev_r1`, `dev_r2` or `dev_r3`."
-            assert args.dataset_config_name is not None, error_message
-            assert args.dataset_config_name in ["dev_r1", "dev_r2", "dev_r3"], error_message
-            raw_datasets = load_dataset(args.dataset_name, split=args.dataset_config_name)
-        else:
-            raw_datasets = load_dataset(args.dataset_name, args.dataset_config_name, split="validation")
-    #TODO(Victor): enable loading pre-processed dataset from https://huggingface.co/datasets/bigscience/P3
-
-    # Trim a number of evaluation examples
-    if args.debug:
-        raw_datasets = raw_datasets.select(range(min(len(raw_datasets),100)))
-
-    column_names = raw_datasets.column_names
-
 
     # Load pretrained model and tokenizer
     #
@@ -204,9 +245,11 @@ def main():
         )
 
     if args.tokenizer_name:
-        tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name, use_fast=not args.use_slow_tokenizer, padding_side="left")
+        tokenizer = AutoTokenizer.from_pretrained(
+            args.tokenizer_name, use_fast=not args.use_slow_tokenizer, padding_side="left")
     elif args.model_name_or_path:
-        tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path, use_fast=not args.use_slow_tokenizer, padding_side="left")
+        tokenizer = AutoTokenizer.from_pretrained(
+            args.model_name_or_path, use_fast=not args.use_slow_tokenizer, padding_side="left")
     else:
         raise ValueError(
             "You are instantiating a new tokenizer from scratch. This is not supported by this script."
@@ -220,156 +263,187 @@ def main():
         if tokenizer.pad_token is None:
             raise ValueError("Please define a pad token id.")
 
-
     model = ModelBase.from_config(
         config=config,
         model_name_or_path=args.model_name_or_path,
-        parallelize=args.parallelize
+        parallelize=args.parallelize,
+        torch_dtype=torch.bfloat16
     )
 
-    # Preprocessing the datasets.
-    # First we tokenize all the texts.
-    padding = "max_length" if args.pad_to_max_length else False
+    results = []
+    for (dataset_name, dataset_config_name), template_names in template_list.items():
+        for template_name in template_names:
+            # In distributed evaluation, the load_dataset function guarantee that only one local process can concurrently
+            # download the dataset.
+            if dataset_name is not None:
+                # Downloading and loading a dataset from the hub.
+                if dataset_name == "anli":
+                    error_message = "For ANLI, `dataset_config_name` should be either `dev_r1`, `dev_r2` or `dev_r3`."
+                    assert dataset_config_name is not None, error_message
+                    assert dataset_config_name in [
+                        "dev_r1", "dev_r2", "dev_r3"], error_message
+                    raw_datasets = load_dataset(
+                        dataset_name, split=dataset_config_name)
+                else:
+                    raw_datasets = load_dataset(
+                        dataset_name, dataset_config_name, split="validation")
+            # TODO(Victor): enable loading pre-processed dataset from https://huggingface.co/datasets/bigscience/P3
 
-    # Get the prompt to apply and the possible targets.
-    # TODO(Victor): If pulling from pre-processed data, remove this logic.
-    prompts = DatasetTemplates(
-        f"{args.dataset_name}"
-        if args.dataset_config_name is None
-        else f"{args.dataset_name}/{args.dataset_config_name}"
-    )
-    template = prompts[args.template_name]
+            # Trim a number of evaluation examples
+            if args.debug:
+                raw_datasets = raw_datasets.select(
+                    range(min(len(raw_datasets), 100)))
 
-    def preprocess_function(examples):
-        bs = len(examples[column_names[0]])
+            column_names = raw_datasets.column_names
 
-        input_texts = []
-        target_texts = []
-        answer_choices_texts = []
-        for i in range(bs):
-            ex = {
-                k: examples[k][i]
-                for k in column_names
-            }
-            input, target = template.apply(ex)
-            ex_answer_choices = template.get_answer_choices_list(ex)
-            assert target[0] in ex_answer_choices
-            input_texts.append(input)
-            target_texts.append(target[0])
-            answer_choices_texts.append(ex_answer_choices)
+            # Preprocessing the datasets.
+            # First we tokenize all the texts.
+            padding = "max_length" if args.pad_to_max_length else False
 
-        tokenized_inputs = tokenizer(
-            input_texts,
-            padding=padding,
-            max_length=args.max_length,
-            truncation=True,
-            add_special_tokens=False,
-        )
-        tokenized_targets = [
-            tokenizer(
-                ans_choi,
-                # padding is on the right here.
-                padding=False,
-                max_length=args.max_length,
-                truncation=True,
+            # Get the prompt to apply and the possible targets.
+            # TODO(Victor): If pulling from pre-processed data, remove this logic.
+            prompts = DatasetTemplates(
+                f"{dataset_name}"
+                if dataset_config_name is None
+                else f"{dataset_name}/{dataset_config_name}"
             )
-            for ans_choi in answer_choices_texts
-        ]
+            template = prompts[template_name]
 
-        features = {
-            k: [
-                [elem for _ in range(len(tokenized_targets[idx]["input_ids"]))]
-                for idx, elem in enumerate(v)
-            ]
-            for k, v in tokenized_inputs.items()
-        }
+            def preprocess_function(examples):
+                bs = len(examples[column_names[0]])
 
-        features["labels"] = [
-            tokenized_targets[idx]["input_ids"]
-            for idx in range(bs)
-        ]
-        features["labels_attention_mask"] = [
-            tokenized_targets[idx]["attention_mask"]
-            for idx in range(bs)
-        ]
-        features["targets"] = [
-            answer_choices_texts[idx].index(t)
-            for idx, t in enumerate(target_texts)
-        ]
+                input_texts = []
+                target_texts = []
+                answer_choices_texts = []
+                for i in range(bs):
+                    ex = {
+                        k: examples[k][i]
+                        for k in column_names
+                    }
+                    input, target = template.apply(ex)
+                    ex_answer_choices = template.get_answer_choices_list(ex)
+                    assert target[0] in ex_answer_choices
+                    input_texts.append(input)
+                    target_texts.append(target[0])
+                    answer_choices_texts.append(ex_answer_choices)
 
-        return features
+                tokenized_inputs = tokenizer(
+                    input_texts,
+                    padding=padding,
+                    max_length=args.max_length,
+                    truncation=True,
+                    add_special_tokens=False,
+                )
+                tokenized_targets = [
+                    tokenizer(
+                        ans_choi,
+                        # padding is on the right here.
+                        padding=False,
+                        max_length=args.max_length,
+                        truncation=True,
+                    )
+                    for ans_choi in answer_choices_texts
+                ]
 
-    with accelerator.main_process_first():
-        eval_dataset = raw_datasets.map(
-            preprocess_function, batched=True, remove_columns=column_names
-        )
+                features = {
+                    k: [
+                        [elem for _ in range(
+                            len(tokenized_targets[idx]["input_ids"]))]
+                        for idx, elem in enumerate(v)
+                    ]
+                    for k, v in tokenized_inputs.items()
+                }
 
-    # Log a few random samples from the eval set:
-    for index in random.sample(range(len(eval_dataset)), 3):
-        logger.info(f"Sample {index} of the training set: {eval_dataset[index]}.")
+                features["labels"] = [
+                    tokenized_targets[idx]["input_ids"]
+                    for idx in range(bs)
+                ]
+                features["labels_attention_mask"] = [
+                    tokenized_targets[idx]["attention_mask"]
+                    for idx in range(bs)
+                ]
+                features["targets"] = [
+                    answer_choices_texts[idx].index(t)
+                    for idx, t in enumerate(target_texts)
+                ]
 
-    # DataLoaders creation:
-    if args.pad_to_max_length:
-        # If padding was already done ot max length, we use the default data collator that will just convert everything
-        # to tensors.
-        data_collator = default_data_collator
-    else:
-        # Otherwise, `DataCollatorWithPadding` will apply dynamic padding for us (by padding to the maximum length of
-        # the samples passed). When using mixed precision, we add `pad_to_multiple_of=8` to pad all tensors to multiple
-        # of 8s, which will enable the use of Tensor Cores on NVIDIA hardware with compute capability >= 7.5 (Volta).
-        data_collator = DataCollatorForMultipleChoice(
-            tokenizer, pad_to_multiple_of=(8 if accelerator.use_fp16 else None)
-        )
+                return features
 
-    eval_dataloader = DataLoader(eval_dataset, collate_fn=data_collator, batch_size=args.per_device_eval_batch_size)
+            with accelerator.main_process_first():
+                eval_dataset = raw_datasets.map(
+                    preprocess_function, batched=True, remove_columns=column_names
+                )
 
+            # Log a few random samples from the eval set:
+            # for index in random.sample(range(len(eval_dataset)), 3):
+            #     logger.info(
+            #         f"Sample {index} of the training set: {eval_dataset[index]}.")
 
-    # Use the device given by the `accelerator` object.
-    if not args.parallelize:
-        model.to(accelerator.device)
+            # DataLoaders creation:
+            if args.pad_to_max_length:
+                # If padding was already done ot max length, we use the default data collator that will just convert everything
+                # to tensors.
+                data_collator = default_data_collator
+            else:
+                # Otherwise, `DataCollatorWithPadding` will apply dynamic padding for us (by padding to the maximum length of
+                # the samples passed). When using mixed precision, we add `pad_to_multiple_of=8` to pad all tensors to multiple
+                # of 8s, which will enable the use of Tensor Cores on NVIDIA hardware with compute capability >= 7.5 (Volta).
+                data_collator = DataCollatorForMultipleChoice(
+                    tokenizer, pad_to_multiple_of=(
+                        8 if accelerator.use_fp16 else None)
+                )
 
-    # Prepare everything with our `accelerator`.
-    eval_dataloader = accelerator.prepare(eval_dataloader)
+            eval_dataloader = DataLoader(
+                eval_dataset, collate_fn=data_collator, batch_size=args.per_device_eval_batch_size)
 
+            # Use the device given by the `accelerator` object.
+            if not args.parallelize:
+                model.to(accelerator.device)
 
-    # Metrics
-    metric = load_metric("accuracy")
+            # Prepare everything with our `accelerator`.
+            eval_dataloader = accelerator.prepare(eval_dataloader)
 
-    # Eval!
-    total_batch_size = args.per_device_eval_batch_size * accelerator.num_processes
+            # Metrics
+            metric = load_metric("accuracy")
 
-    logger.info("***** Running evaluation *****")
-    logger.info(f"  Num examples = {len(eval_dataset)}")
-    logger.info(f"  Instantaneous batch size per device = {args.per_device_eval_batch_size}")
-    logger.info(f"  Total eval batch size (w. parallel, distributed) = {total_batch_size}")
-    # Only show the progress bar once on each machine.
-    progress_bar = tqdm(range(len(eval_dataloader)), disable=not accelerator.is_local_main_process)
+            # Eval!
+            total_batch_size = args.per_device_eval_batch_size * accelerator.num_processes
 
-    model.eval()
-    for batch in eval_dataloader:
-        with torch.no_grad():
-            predictions = model(batch)
+            logger.info("***** Running evaluation *****")
+            logger.info(f"  Num examples = {len(eval_dataset)}")
+            logger.info(
+                f"  Instantaneous batch size per device = {args.per_device_eval_batch_size}")
+            logger.info(
+                f"  Total eval batch size (w. parallel, distributed) = {total_batch_size}")
+            # Only show the progress bar once on each machine.
+            progress_bar = tqdm(range(len(eval_dataloader)),
+                                disable=not accelerator.is_local_main_process)
 
-        metric.add_batch(
-            predictions=accelerator.gather(predictions),
-            references=accelerator.gather(batch["targets"]),
-        )
+            model.eval()
+            for batch in eval_dataloader:
+                with torch.no_grad():
+                    predictions = model(batch)
 
-        progress_bar.update(1)
+                metric.add_batch(
+                    predictions=accelerator.gather(predictions),
+                    references=accelerator.gather(batch["targets"]),
+                )
 
-    eval_metric = metric.compute()
-    accelerator.print(f"Result: {eval_metric}")
+                progress_bar.update(1)
 
-    results = {
-        "dataset_name": args.dataset_name,
-        "dataset_config_name": args.dataset_config_name,
-        "template_name": args.template_name,
-        "evaluation": eval_metric
-    }
+            eval_metric = metric.compute()
+            accelerator.print(f"Result: {eval_metric}")
+
+            results.append({
+                "dataset_name": dataset_name,
+                "dataset_config_name": dataset_config_name,
+                "template_name": template_name,
+                "evaluation": eval_metric
+            })
     if accelerator.is_main_process:
         if args.output_dir is not None:
-            with open(os.path.join(args.output_dir, "generalization-evaluation-results.json"), "w") as f:
-                json.dump(results, f, indent=4)
+            with open(os.path.join(args.output_dir, f"{args.model_name_or_path.split('/')[-1]}-generalization-evaluation-results.json"), "w") as f:
+                json.dump(results, f, indent=2)
 
 
 if __name__ == "__main__":
