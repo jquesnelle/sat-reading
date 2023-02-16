@@ -19,7 +19,7 @@ def parse_args():
     parser.add_argument("--dtype", type=str, help="Data type to load model in",
                         choices=['float32', 'float16', 'bfloat16', '8bit'], default="bfloat16")
     parser.add_argument("--split", type=str, help="Split to run on",
-                        choices=['train', 'test', 'valid'], default='train')
+                        choices=['train', 'test', 'validation'], default='train')
     parser.add_argument("--result_file", type=str,
                         help="Path to file to record results in", default="outputs/results.json")
 
@@ -66,8 +66,8 @@ def score_answer(results, question, answer):
         answer = answer[7:]
 
     final_answer = answer[0] if len(answer) > 0 else ' '
-    if final_answer not in ['A', 'B', 'C', 'D']:
-        print(f"Unexpected answer format: {answer}")
+    # if final_answer not in ['A', 'B', 'C', 'D']:
+    #     print(f"Unexpected answer format: {answer}")
 
     score(results["all"], question, final_answer)
     for requires in question["requires"]:
@@ -80,6 +80,9 @@ def run_transformers_model(dataset, tokenizer, model, generate_args, does_echo):
     for question in tqdm(dataset):
         input_ids = tokenizer(
             question["text"], return_tensors="pt").input_ids.to("cuda")
+
+        if len(input_ids) >= 2048:
+            print("Warning: tokenized prompt >= 2048 tokens")
 
         outputs = model.generate(input_ids, **generate_args)
         answer = tokenizer.decode(outputs[0], skip_special_tokens=True)

@@ -8,17 +8,17 @@ from typing import Any, Dict, List
 def create_dataset_for_keys(combined_raw_data: Dict, args: Any, keys: List[str], output_file: str):
     data = []
     for key in keys:
-        for section in combined_raw_data[key]['sections']:
+        for section in combined_raw_data[key]["sections"]:
 
             header = f"SAT READING COMPREHENSION TEST\n\n{section['context']}\n\n"
             offset = 1
-            for i in range(0, len(section['passages'])):
+            for i in range(0, len(section["passages"])):
                 if i > 0:
                     header += "\n\n"
-                if len(section['passages']) > 1:
+                if len(section["passages"]) > 1:
                     header += f"Passage {i + 1}\n"
 
-                passage = section['passages'][i]
+                passage = section["passages"][i]
                 if args.line_numbers == 0:
                     passage = "\n".join(
                         [f"{str(index + offset).rjust(3, ' ')}{line}" for index, line in enumerate(passage.split('\n'))])
@@ -30,40 +30,41 @@ def create_dataset_for_keys(combined_raw_data: Dict, args: Any, keys: List[str],
 
                 offset += len(passage.split('\n'))
 
-            for i in range(0, len(section['tables'])):
+            for i in range(0, len(section["tables"])):
                 header += "\n\n"
-                if len(section['tables']) > 1:
+                if len(section["tables"]) > 1:
                     header += f"Table {i + 1}\n"
                 header += f"{section['tables'][i]}"
 
-            for i in range(0, len(section['graphs'])):
+            for i in range(0, len(section["graphs"])):
                 header += "\n\n"
-                if len(section['graphs']) > 1:
+                if len(section["graphs"]) > 1:
                     header += f"Graph {i + 1}\n"
                 header += f"{section['graphs'][i]}"
 
             for i in range(0, len(section['figures'])):
                 header += "\n\n"
-                if len(section['figures']) > 1:
+                if len(section["figures"]) > 1:
                     header += f"Figure {i + 1}\n"
                 header += f"{section['figures'][i]}"
 
-            for num, question in section['questions'].items():
-                if not args.include_previous and 'previous' in question['requires']:
+            for num, question in section["questions"].items():
+                if not args.include_previous and "previous" in question["requires"]:
                     continue
-                if not args.include_graph and 'graph' in question['requires']:
+                if not args.include_graph and "graph" in question["requires"]:
                     continue
-                if not args.include_table and 'table' in question['requires']:
+                if not args.include_table and "table" in question["requires"]:
                     continue
-                if not args.include_figure and 'figure' in question['requires']:
+                if not args.include_figure and "figure" in question["requires"]:
                     continue
-                if not args.include_line and 'line' in question['requires']:
+                if not args.include_line and "line" in question["requires"]:
                     continue
-                answers = "\n".join(question['answers'])
+                answers = "\n".join(question["answers"])
                 data.append({
-                    'text': f"{header}\n\n\n\nQuestion {num}:\n{question['text']}\n{answers}\nAnswer:",
-                    'answer': question['answer'],
-                    'requires': question['requires']
+                    "text": f"{header}\n\n\n\nQuestion {num}:\n{question['text']}\n{answers}\n\nAnswer:",
+                    "answer": question["answer"],
+                    "requires": question["requires"],
+                    "id": f"{key}-question_{num}"
                 })
 
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
@@ -82,17 +83,17 @@ def parse_args():
                         help="Key to use for test dataset")
     parser.add_argument("--validation", type=str, default=None,
                         help="Key to use for validation dataset")
-    parser.add_argument("--line_numbers", type=int, default=0,
+    parser.add_argument("--line_numbers", type=int, default=2,
                         help="Line numbers to generate: 0 for full, 1 for SAT-style (every 5), 2 for none")
-    parser.add_argument("--include-previous", type=bool, default=False,
+    parser.add_argument("--include_previous", type=bool, default=False,
                         help="Include questions that depend on the previous question")
-    parser.add_argument("--include-graph", type=bool, default=False,
+    parser.add_argument("--include_graph", type=bool, default=False,
                         help="Include questions that depend on a graph")
-    parser.add_argument("--include-table", type=bool, default=False,
+    parser.add_argument("--include_table", type=bool, default=False,
                         help="Include questions that depend on a table")
-    parser.add_argument("--include-figure", type=bool, default=False,
+    parser.add_argument("--include_figure", type=bool, default=False,
                         help="Include questions that depend on a figure")
-    parser.add_argument("--include-line", type=bool, default=True,
+    parser.add_argument("--include_line", type=bool, default=True,
                         help="Include questions that depend on a line number")
 
     return parser.parse_args()
@@ -110,7 +111,7 @@ def main(args):
             args.output_dir, args.dataset_name, "data", "test.jsonl"))
 
     if args.validation is not None:
-        keys.remove(args.test)
+        keys.remove(args.validation)
         create_dataset_for_keys(combined_raw_data, args, [args.validation], os.path.join(
             args.output_dir, args.dataset_name, "data", "valid.jsonl"))
 
