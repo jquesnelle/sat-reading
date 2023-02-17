@@ -36,8 +36,10 @@ def parse_args():
                         help="Seed to use for training.")
     parser.add_argument("--deepspeed", type=str, default=None,
                         help="Path to deepspeed config file.")
+    parser.add_argument("--local_rank", type=int, default=None,
+                        help="Deepspeed local rank.")
     parser.add_argument("--gradient_checkpointing", type=bool,
-                        default=True, help="Path to deepspeed config file.")
+                        default=True, help="Enable gradient checkpointing.")
     parser.add_argument(
         "--bf16",
         type=bool,
@@ -97,7 +99,7 @@ def main(args):
         load_best_model_at_end=True,
         # push to hub parameters
         push_to_hub=True if args.repository_id else False,
-        hub_strategy="every_save",
+        hub_strategy="end",
         hub_model_id=args.repository_id if args.repository_id else None,
         hub_token=args.hf_token,
     )
