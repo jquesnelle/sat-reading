@@ -77,7 +77,8 @@ def main(args):
     )
 
     # Define training args
-    output_dir = os.path.join(args.output_dir, f'{args.model.split("/")[-1]}-{args.dataset.replace("/", "-")}')
+    output_dir = os.path.join(
+        args.output_dir, f'{args.model.split("/")[-1]}-{args.dataset.replace("/", "-")}')
     training_args = Seq2SeqTrainingArguments(
         overwrite_output_dir=True,
         output_dir=output_dir,
@@ -90,15 +91,11 @@ def main(args):
         deepspeed=args.deepspeed,
         gradient_checkpointing=args.gradient_checkpointing,
         # logging & evaluation strategies
-        logging_dir=f"{output_dir}/logs",
-        logging_strategy="steps",
-        logging_steps=500,
         evaluation_strategy="epoch",
         save_strategy="epoch",
         save_total_limit=2,
         load_best_model_at_end=True,
         # push to hub parameters
-        report_to="tensorboard",
         push_to_hub=True if args.repository_id else False,
         hub_strategy="every_save",
         hub_model_id=args.repository_id if args.repository_id else None,
