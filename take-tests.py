@@ -117,14 +117,24 @@ def oai(args):
     dataset = load_dataset(args.dataset)[args.split]
     results = new_results()
 
+    fails = 0
+
     for question in tqdm(dataset):
-        completion = openai.Completion.create(
-            engine=args.model, prompt=question["text"], temperature=0)
-        answer = completion['choices'][0]['text']
+        while fails <= 10:
+            try:
+                completion = openai.Completion.create(
+                    engine=args.model, prompt=question["text"], temperature=0)
+                answer = completion['choices'][0]['text']
 
-        score_answer(results, question, answer)
+                score_answer(results, question, answer)
 
-        time.sleep(1)  # you know... the rate limit...
+                time.sleep(1)  # you know... the rate limit...
+                break
+            except openai.OpenAIError as e:
+                print(f"OpenAI error: {e}")
+                print(f"Waiting 60 seconds, {10 - fails} left...")
+                fails += 1
+                time.sleep(60)
 
     return results
 
