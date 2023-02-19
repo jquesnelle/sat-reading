@@ -63,7 +63,7 @@ def create_dataset_for_keys(combined_raw_data: Dict, args: Any, keys: List[str],
                 data.append({
                     "text": f"{header}\n\n\n\nQuestion {num}:\n{question['text']}\n{answers}\n\nAnswer:",
                     "answer": question["answer"],
-                    "requires": question["requires"],
+                    "requires_line" if args.requires_line_feature else "requires": "line" in question["requires"] if args.requires_line_feature else question["requires"],
                     "id": f"{key}-question_{num}"
                 })
 
@@ -95,6 +95,8 @@ def parse_args():
                         help="Include questions that depend on a figure")
     parser.add_argument("--include_line", type=bool, default=True,
                         help="Include questions that depend on a line number")
+    parser.add_argument("--requires_line_feature", type=bool, default=False,
+                        help="Only use a single bool requires_line feature")
 
     return parser.parse_args()
 
