@@ -1,0 +1,196 @@
+{
+  "results": [
+    {
+      "task_name": "wsc",
+      "prompt_name": "GPT-3 Style",
+      "acc": 0.7596153846153846,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_stderr": 0.04210479898748785
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "GPT-3 Style",
+      "acc_norm": 0.7692307692307693,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_norm_stderr": 0.04151439017083582
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "I think they mean",
+      "acc": 0.6923076923076923,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_stderr": 0.04547673591527507
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "I think they mean",
+      "acc_norm": 0.6923076923076923,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_norm_stderr": 0.04547673591527507
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "Who or what is/are",
+      "acc": 0.7692307692307693,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_stderr": 0.04151439017083583
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "Who or what is/are",
+      "acc_norm": 0.5961538461538461,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_norm_stderr": 0.048346889526540184
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "by p they mean",
+      "acc": 0.6538461538461539,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_stderr": 0.04687634642174987
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "by p they mean",
+      "acc_norm": 0.6826923076923077,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_norm_stderr": 0.045860015021449374
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "does p stand for",
+      "acc": 0.7307692307692307,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_stderr": 0.04370527529535192
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "does p stand for",
+      "acc_norm": 0.7403846153846154,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_norm_stderr": 0.04319915909447558
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "does the pronoun refer to",
+      "acc": 0.7307692307692307,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_stderr": 0.04370527529535192
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "does the pronoun refer to",
+      "acc_norm": 0.7403846153846154,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_norm_stderr": 0.04319915909447558
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "in other words",
+      "acc": 0.6442307692307693,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_stderr": 0.04717221961050337
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "in other words",
+      "acc_norm": 0.6730769230769231,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_norm_stderr": 0.04622070089521467
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "p is/are r",
+      "acc": 0.5576923076923077,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_stderr": 0.04893740777700999
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "p is/are r",
+      "acc_norm": 0.5673076923076923,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_norm_stderr": 0.048818036870061955
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "replaced with",
+      "acc": 0.7307692307692307,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_stderr": 0.043705275295351925
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "replaced with",
+      "acc_norm": 0.7115384615384616,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_norm_stderr": 0.04464003593905589
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "the pronoun refers to",
+      "acc": 0.6730769230769231,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_stderr": 0.04622070089521467
+    },
+    {
+      "task_name": "wsc",
+      "prompt_name": "the pronoun refers to",
+      "acc_norm": 0.6826923076923077,
+      "dataset_path": "super_glue",
+      "dataset_name": "wsc.fixed",
+      "subset": null,
+      "acc_norm_stderr": 0.04586001502144936
+    }
+  ],
+  "config": {
+    "model": "hf-seq2seq",
+    "model_args": "use_accelerate=True,pretrained=trained/flan-t5-xl-outputs-all-train-processed",
+    "task_args": "",
+    "num_fewshot": 0,
+    "batch_size": 64,
+    "device": null,
+    "use_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "seed": 1234
+  }
+}

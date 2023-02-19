@@ -1,0 +1,196 @@
+{
+  "results": [
+    {
+      "task_name": "axb",
+      "prompt_name": "GPT-3 style",
+      "acc": 0.7336956521739131,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_stderr": 0.013309426585793227
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "GPT-3 style",
+      "acc_norm": 0.7445652173913043,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_norm_stderr": 0.013131176332637648
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "MNLI crowdsource",
+      "acc": 0.7481884057971014,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_stderr": 0.01306939825129126
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "MNLI crowdsource",
+      "acc_norm": 0.7355072463768116,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_norm_stderr": 0.013280444484855722
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "based on the previous passage",
+      "acc": 0.7445652173913043,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_stderr": 0.013131176332637641
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "based on the previous passage",
+      "acc_norm": 0.7373188405797102,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_norm_stderr": 0.013251174460201857
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "can we infer",
+      "acc": 0.7572463768115942,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_stderr": 0.012909627351225675
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "can we infer",
+      "acc_norm": 0.7336956521739131,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_norm_stderr": 0.013309426585793226
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "does it follow that",
+      "acc": 0.7527173913043478,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_stderr": 0.012990474232716154
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "does it follow that",
+      "acc_norm": 0.7373188405797102,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_norm_stderr": 0.013251174460201846
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "does this imply",
+      "acc": 0.7527173913043478,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_stderr": 0.012990474232716154
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "does this imply",
+      "acc_norm": 0.7373188405797102,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_norm_stderr": 0.013251174460201836
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "guaranteed true",
+      "acc": 0.740036231884058,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_stderr": 0.01320672537341324
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "guaranteed true",
+      "acc_norm": 0.7146739130434783,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_norm_stderr": 0.013596807497491545
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "justified in saying",
+      "acc": 0.7663043478260869,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_stderr": 0.012742017725255194
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "justified in saying",
+      "acc_norm": 0.7563405797101449,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_norm_stderr": 0.012925952276055088
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "must be true",
+      "acc": 0.7518115942028986,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_stderr": 0.013006411733046605
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "must be true",
+      "acc_norm": 0.7355072463768116,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_norm_stderr": 0.013280444484855722
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "should assume",
+      "acc": 0.7472826086956522,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_stderr": 0.01308495538826355
+    },
+    {
+      "task_name": "axb",
+      "prompt_name": "should assume",
+      "acc_norm": 0.7228260869565217,
+      "dataset_path": "super_glue",
+      "dataset_name": "axb",
+      "subset": null,
+      "acc_norm_stderr": 0.013477375520710402
+    }
+  ],
+  "config": {
+    "model": "hf-seq2seq",
+    "model_args": "use_accelerate=True,pretrained=google/flan-t5-large",
+    "task_args": "",
+    "num_fewshot": 0,
+    "batch_size": 128,
+    "device": null,
+    "use_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "seed": 1234
+  }
+}

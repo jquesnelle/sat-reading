@@ -1,0 +1,271 @@
+{
+  "results": [
+    {
+      "task_name": "cb",
+      "prompt_name": "GPT-3 style",
+      "acc": 0.875,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.04459412925079224
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "GPT-3 style",
+      "f1": 0.6102958304216166,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "MNLI crowdsource",
+      "acc": 0.39285714285714285,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.0658538889806635
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "MNLI crowdsource",
+      "f1": 0.3276094276094276,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "always/sometimes/never",
+      "acc": 0.6428571428571429,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.06460957383809221
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "always/sometimes/never",
+      "f1": 0.5635075543989013,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "based on the previous passage",
+      "acc": 0.9821428571428571,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.01785714285714287
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "based on the previous passage",
+      "f1": 0.9867446393762184,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "can we infer",
+      "acc": 0.875,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.04459412925079224
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "can we infer",
+      "f1": 0.6102958304216166,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "claim true/false/inconclusive",
+      "acc": 0.875,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.04459412925079224
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "claim true/false/inconclusive",
+      "f1": 0.6144781144781145,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "consider always/sometimes/never",
+      "acc": 0.625,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.06527912098338669
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "consider always/sometimes/never",
+      "f1": 0.5410399095730806,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "does it follow that",
+      "acc": 0.9285714285714286,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.03472660248602843
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "does it follow that",
+      "f1": 0.9174283717679944,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "does this imply",
+      "acc": 0.9464285714285714,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.030361917118846827
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "does this imply",
+      "f1": 0.837406015037594,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "guaranteed true",
+      "acc": 0.9642857142857143,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.025023180348048967
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "guaranteed true",
+      "f1": 0.9486975013290803,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "guaranteed/possible/impossible",
+      "acc": 0.30357142857142855,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.06199938655510754
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "guaranteed/possible/impossible",
+      "f1": 0.31494079113126733,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "justified in saying",
+      "acc": 0.8928571428571429,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.0417053005800816
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "justified in saying",
+      "f1": 0.6224561403508773,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "must be true",
+      "acc": 0.8928571428571429,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.04170530058008159
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "must be true",
+      "f1": 0.7282331511839709,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "should assume",
+      "acc": 0.9464285714285714,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.03036191711884684
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "should assume",
+      "f1": 0.836734693877551,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "take the following as truth",
+      "acc": 0.8571428571428571,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null,
+      "acc_stderr": 0.04718416136255829
+    },
+    {
+      "task_name": "cb",
+      "prompt_name": "take the following as truth",
+      "f1": 0.5993265993265994,
+      "dataset_path": "super_glue",
+      "dataset_name": "cb",
+      "subset": null
+    }
+  ],
+  "config": {
+    "model": "hf-seq2seq",
+    "model_args": "use_accelerate=True,pretrained=google/flan-t5-xxl",
+    "task_args": "",
+    "num_fewshot": 0,
+    "batch_size": 32,
+    "device": null,
+    "use_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "seed": 1234
+  }
+}

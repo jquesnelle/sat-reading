@@ -1,0 +1,196 @@
+{
+  "results": [
+    {
+      "task_name": "wic",
+      "prompt_name": "GPT-3-prompt",
+      "acc": 0.48589341692789967,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_stderr": 0.01980283522800584
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "GPT-3-prompt",
+      "acc_norm": 0.5,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_norm_stderr": 0.01981072129375818
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "GPT-3-prompt-with-label",
+      "acc": 0.5109717868338558,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_stderr": 0.019805951085979406
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "GPT-3-prompt-with-label",
+      "acc_norm": 0.5203761755485894,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_norm_stderr": 0.019794264089572577
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "affirmation_true_or_false",
+      "acc": 0.5219435736677116,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_stderr": 0.019791633564310452
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "affirmation_true_or_false",
+      "acc_norm": 0.5188087774294671,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_norm_stderr": 0.019796699449453864
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "grammar_homework",
+      "acc": 0.5062695924764891,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_stderr": 0.019809163801196517
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "grammar_homework",
+      "acc_norm": 0.5,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_norm_stderr": 0.01981072129375818
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "polysemous",
+      "acc": 0.5047021943573667,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_stderr": 0.01980984521925977
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "polysemous",
+      "acc_norm": 0.5062695924764891,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_norm_stderr": 0.019809163801196517
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "question-context",
+      "acc": 0.5203761755485894,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_stderr": 0.019794264089572577
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "question-context",
+      "acc_norm": 0.5,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_norm_stderr": 0.01981072129375818
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "question-context-meaning",
+      "acc": 0.5391849529780565,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_stderr": 0.01974979043110035
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "question-context-meaning",
+      "acc_norm": 0.5,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_norm_stderr": 0.01981072129375818
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "question-context-meaning-with-label",
+      "acc": 0.5094043887147336,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_stderr": 0.01980721676327149
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "question-context-meaning-with-label",
+      "acc_norm": 0.5047021943573667,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_norm_stderr": 0.01980984521925977
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "same_sense",
+      "acc": 0.5062695924764891,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_stderr": 0.01980916380119652
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "same_sense",
+      "acc_norm": 0.5047021943573667,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_norm_stderr": 0.019809845219259773
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "similar-sense",
+      "acc": 0.5156739811912225,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_stderr": 0.019800984955347854
+    },
+    {
+      "task_name": "wic",
+      "prompt_name": "similar-sense",
+      "acc_norm": 0.49843260188087773,
+      "dataset_path": "super_glue",
+      "dataset_name": "wic",
+      "subset": null,
+      "acc_norm_stderr": 0.019810623954060382
+    }
+  ],
+  "config": {
+    "model": "hf-seq2seq",
+    "model_args": "use_accelerate=True,pretrained=trained/flan-t5-base-outputs-all-train-processed",
+    "task_args": "",
+    "num_fewshot": 0,
+    "batch_size": 512,
+    "device": null,
+    "use_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "seed": 1234
+  }
+}

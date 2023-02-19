@@ -1,0 +1,196 @@
+{
+  "results": [
+    {
+      "task_name": "boolq",
+      "prompt_name": "GPT-3 Style",
+      "acc": 0.8568807339449541,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_stderr": 0.006124939158871638
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "GPT-3 Style",
+      "acc_norm": 0.7785932721712538,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_norm_stderr": 0.007261783047273555
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "I wonder\u2026",
+      "acc": 0.8409785932721713,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_stderr": 0.0063960640746500794
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "I wonder\u2026",
+      "acc_norm": 0.6892966360856269,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_norm_stderr": 0.008094100581882592
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "after_reading",
+      "acc": 0.8464831804281345,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_stderr": 0.0063049215696072665
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "after_reading",
+      "acc_norm": 0.8516819571865444,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_norm_stderr": 0.006216246906367925
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "based on the following passage",
+      "acc": 0.8382262996941896,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_stderr": 0.0064406120589460695
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "based on the following passage",
+      "acc_norm": 0.7259938837920489,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_norm_stderr": 0.007800800103456016
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "based on the previous passage",
+      "acc": 0.8486238532110092,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_stderr": 0.006268720119292175
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "based on the previous passage",
+      "acc_norm": 0.6972477064220184,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_norm_stderr": 0.008035812741801868
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "could you tell me\u2026",
+      "acc": 0.8431192660550458,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_stderr": 0.006360948107996272
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "could you tell me\u2026",
+      "acc_norm": 0.6981651376146789,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_norm_stderr": 0.008028904997482317
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "exam",
+      "acc": 0.8525993883792049,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_stderr": 0.006200328377083532
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "exam",
+      "acc_norm": 0.8556574923547401,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_norm_stderr": 0.006146666375768773
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "exercise",
+      "acc": 0.8486238532110092,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_stderr": 0.0062687201192921736
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "exercise",
+      "acc_norm": 0.8480122324159022,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_norm_stderr": 0.00627910746884893
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "valid_binary",
+      "acc": 0.8458715596330275,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_stderr": 0.0063151859546969405
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "valid_binary",
+      "acc_norm": 0.8477064220183487,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_norm_stderr": 0.006284287876649818
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "yes_no_question",
+      "acc": 0.8397553516819571,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_stderr": 0.006415945954980932
+    },
+    {
+      "task_name": "boolq",
+      "prompt_name": "yes_no_question",
+      "acc_norm": 0.8489296636085627,
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "subset": null,
+      "acc_norm_stderr": 0.0062635131335332375
+    }
+  ],
+  "config": {
+    "model": "hf-seq2seq",
+    "model_args": "use_accelerate=True,pretrained=google/flan-t5-large",
+    "task_args": "",
+    "num_fewshot": 0,
+    "batch_size": 128,
+    "device": null,
+    "use_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "seed": 1234
+  }
+}

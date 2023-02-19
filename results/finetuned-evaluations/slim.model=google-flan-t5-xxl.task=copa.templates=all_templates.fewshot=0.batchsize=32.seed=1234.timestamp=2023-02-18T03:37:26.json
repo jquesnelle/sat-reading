@@ -1,0 +1,232 @@
+{
+  "results": [
+    {
+      "task_name": "copa",
+      "prompt_name": "C1 or C2? premise, so/because\u2026",
+      "acc": 0.95,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_stderr": 0.021904291355759022
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "C1 or C2? premise, so/because\u2026",
+      "acc_norm": 0.95,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_norm_stderr": 0.021904291355759022
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "best_option",
+      "acc": 0.97,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_stderr": 0.017144660799776508
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "best_option",
+      "acc_norm": 0.96,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_norm_stderr": 0.019694638556693213
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "cause_effect",
+      "acc": 0.97,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_stderr": 0.01714466079977651
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "cause_effect",
+      "acc_norm": 0.97,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_norm_stderr": 0.01714466079977651
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "choose",
+      "acc": 0.97,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_stderr": 0.017144660799776536
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "choose",
+      "acc_norm": 0.97,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_norm_stderr": 0.017144660799776536
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "exercise",
+      "acc": 0.97,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_stderr": 0.017144660799776515
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "exercise",
+      "acc_norm": 0.97,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_norm_stderr": 0.017144660799776515
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "i_am_hesitating",
+      "acc": 0.97,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_stderr": 0.017144660799776522
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "i_am_hesitating",
+      "acc_norm": 0.97,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_norm_stderr": 0.017144660799776522
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "more likely",
+      "acc": 0.98,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_stderr": 0.014070529413628952
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "more likely",
+      "acc_norm": 0.98,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_norm_stderr": 0.014070529413628952
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "plausible_alternatives",
+      "acc": 0.97,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_stderr": 0.017144660799776522
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "plausible_alternatives",
+      "acc_norm": 0.97,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_norm_stderr": 0.017144660799776522
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "\u2026As a result, C1 or C2?",
+      "acc": 0.9375,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_stderr": 0.03530829267912701
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "\u2026As a result, C1 or C2?",
+      "acc_norm": 0.9375,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_norm_stderr": 0.03530829267912701
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "\u2026What could happen next, C1 or C2?",
+      "acc": 0.9375,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_stderr": 0.03530829267912701
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "\u2026What could happen next, C1 or C2?",
+      "acc_norm": 0.9375,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_norm_stderr": 0.03530829267912701
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "\u2026which may be caused by",
+      "acc": 0.9615384615384616,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_stderr": 0.02692846315438481
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "\u2026which may be caused by",
+      "acc_norm": 0.9423076923076923,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_norm_stderr": 0.03264902644719867
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "\u2026why? C1 or C2",
+      "acc": 0.9807692307692307,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_stderr": 0.019230769230769232
+    },
+    {
+      "task_name": "copa",
+      "prompt_name": "\u2026why? C1 or C2",
+      "acc_norm": 0.9807692307692307,
+      "dataset_path": "super_glue",
+      "dataset_name": "copa",
+      "subset": null,
+      "acc_norm_stderr": 0.019230769230769232
+    }
+  ],
+  "config": {
+    "model": "hf-seq2seq",
+    "model_args": "use_accelerate=True,pretrained=google/flan-t5-xxl",
+    "task_args": "",
+    "num_fewshot": 0,
+    "batch_size": 32,
+    "device": null,
+    "use_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "seed": 1234
+  }
+}

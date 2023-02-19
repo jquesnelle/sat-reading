@@ -1,0 +1,673 @@
+[
+    {
+        "model": "google/flan-t5-xxl",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676661453,
+        "scores": {
+            "all": 88.5,
+            "line": 85.8
+        },
+        "results": {
+            "all": {
+                "num_questions": 375,
+                "correct": 332
+            },
+            "line": {
+                "num_questions": 169,
+                "correct": 145
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "google/flan-t5-xl",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676661643,
+        "scores": {
+            "all": 81.3,
+            "line": 78.1
+        },
+        "results": {
+            "all": {
+                "num_questions": 375,
+                "correct": 305
+            },
+            "line": {
+                "num_questions": 169,
+                "correct": 132
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "google/flan-t5-large",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676661722,
+        "scores": {
+            "all": 72.8,
+            "line": 65.7
+        },
+        "results": {
+            "all": {
+                "num_questions": 375,
+                "correct": 273
+            },
+            "line": {
+                "num_questions": 169,
+                "correct": 111
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "google/flan-t5-base",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676661778,
+        "scores": {
+            "all": 59.7,
+            "line": 55.6
+        },
+        "results": {
+            "all": {
+                "num_questions": 375,
+                "correct": 224
+            },
+            "line": {
+                "num_questions": 169,
+                "correct": 94
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "google/flan-t5-xxl",
+        "dataset": "outputs/all-held-out",
+        "dtype": "bfloat16",
+        "split": "test",
+        "time": 1676661870,
+        "scores": {
+            "all": 89.6,
+            "line": 86.7
+        },
+        "results": {
+            "all": {
+                "num_questions": 77,
+                "correct": 69
+            },
+            "line": {
+                "num_questions": 30,
+                "correct": 26
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "google/flan-t5-xl",
+        "dataset": "outputs/all-held-out",
+        "dtype": "bfloat16",
+        "split": "test",
+        "time": 1676661925,
+        "scores": {
+            "all": 81.8,
+            "line": 80.0
+        },
+        "results": {
+            "all": {
+                "num_questions": 77,
+                "correct": 63
+            },
+            "line": {
+                "num_questions": 30,
+                "correct": 24
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "google/flan-t5-large",
+        "dataset": "outputs/all-held-out",
+        "dtype": "bfloat16",
+        "split": "test",
+        "time": 1676661968,
+        "scores": {
+            "all": 74.0,
+            "line": 66.7
+        },
+        "results": {
+            "all": {
+                "num_questions": 77,
+                "correct": 57
+            },
+            "line": {
+                "num_questions": 30,
+                "correct": 20
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "google/flan-t5-base",
+        "dataset": "outputs/all-held-out",
+        "dtype": "bfloat16",
+        "split": "test",
+        "time": 1676662008,
+        "scores": {
+            "all": 57.1,
+            "line": 56.7
+        },
+        "results": {
+            "all": {
+                "num_questions": 77,
+                "correct": 44
+            },
+            "line": {
+                "num_questions": 30,
+                "correct": 17
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "outputs/flan-t5-xxl-outputs-all-train-processed",
+        "dataset": "outputs/all-held-out",
+        "dtype": "bfloat16",
+        "split": "test",
+        "time": 1676662122,
+        "scores": {
+            "all": 88.3,
+            "line": 90.0
+        },
+        "results": {
+            "all": {
+                "num_questions": 77,
+                "correct": 68
+            },
+            "line": {
+                "num_questions": 30,
+                "correct": 27
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "outputs/flan-t5-xl-outputs-all-train-processed",
+        "dataset": "outputs/all-held-out",
+        "dtype": "bfloat16",
+        "split": "test",
+        "time": 1676662179,
+        "scores": {
+            "all": 87.0,
+            "line": 83.3
+        },
+        "results": {
+            "all": {
+                "num_questions": 77,
+                "correct": 67
+            },
+            "line": {
+                "num_questions": 30,
+                "correct": 25
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "outputs/flan-t5-large-outputs-all-train-processed",
+        "dataset": "outputs/all-held-out",
+        "dtype": "bfloat16",
+        "split": "test",
+        "time": 1676662223,
+        "scores": {
+            "all": 79.2,
+            "line": 83.3
+        },
+        "results": {
+            "all": {
+                "num_questions": 77,
+                "correct": 61
+            },
+            "line": {
+                "num_questions": 30,
+                "correct": 25
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "outputs/flan-t5-base-outputs-all-train-processed",
+        "dataset": "outputs/all-held-out",
+        "dtype": "bfloat16",
+        "split": "test",
+        "time": 1676662259,
+        "scores": {
+            "all": 59.7,
+            "line": 66.7
+        },
+        "results": {
+            "all": {
+                "num_questions": 77,
+                "correct": 46
+            },
+            "line": {
+                "num_questions": 30,
+                "correct": 20
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "facebook/opt-iml-max-30b",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676664285,
+        "scores": {
+            "all": 59.7,
+            "line": 56.8
+        },
+        "results": {
+            "all": {
+                "num_questions": 375,
+                "correct": 224
+            },
+            "line": {
+                "num_questions": 169,
+                "correct": 96
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "bigscience/bloomz-7b1",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676699727,
+        "scores": {
+            "all": 54.1,
+            "line": 55.6
+        },
+        "results": {
+            "all": {
+                "num_questions": 375,
+                "correct": 203
+            },
+            "line": {
+                "num_questions": 169,
+                "correct": 94
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "bigscience/bloomz-3b",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676699929,
+        "scores": {
+            "all": 49.9,
+            "line": 55.6
+        },
+        "results": {
+            "all": {
+                "num_questions": 375,
+                "correct": 187
+            },
+            "line": {
+                "num_questions": 169,
+                "correct": 94
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "bigscience/mt0-xxl",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676700564,
+        "scores": {
+            "all": 78.4,
+            "line": 74.6
+        },
+        "results": {
+            "all": {
+                "num_questions": 375,
+                "correct": 294
+            },
+            "line": {
+                "num_questions": 169,
+                "correct": 126
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "bigscience/mt0-xl",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676701338,
+        "scores": {
+            "all": 57.1,
+            "line": 53.3
+        },
+        "results": {
+            "all": {
+                "num_questions": 375,
+                "correct": 214
+            },
+            "line": {
+                "num_questions": 169,
+                "correct": 90
+            },
+            "graph": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "table": {
+                "num_questions": 0,
+                "correct": 0
+            },
+            "figure": {
+                "num_questions": 0,
+                "correct": 0
+            }
+        }
+    },
+    {
+        "model": "facebook/opt-iml-1.3b",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676774958,
+        "scores": {
+            "all": 24.3,
+            "line": 24.3
+        }
+    },
+    {
+        "model": "bigscience/mt0-base",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676775041,
+        "scores": {
+            "all": 35.5,
+            "line": 33.1
+        }
+    },
+    {
+        "model": "bigscience/mt0-large",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676775136,
+        "scores": {
+            "all": 42.4,
+            "line": 40.2
+        }
+    },
+    {
+        "model": "bigscience/bloomz-1b1",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676775338,
+        "scores": {
+            "all": 20.8,
+            "line": 20.7
+        }
+    },
+    {
+        "model": "bigscience/bloomz-1b7",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676775389,
+        "scores": {
+            "all": 43.7,
+            "line": 46.2
+        }
+    },
+    {
+        "model": "facebook/opt-iml-max-1.3b",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676778124,
+        "scores": {
+            "all": 38.7,
+            "line": 39.1
+        }
+    },
+    {
+        "model": "text-ada-001",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676776534,
+        "scores": {
+            "all": 24.3,
+            "line": 26.6
+        }
+    },
+    {
+        "model": "text-babbage-001",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676777007,
+        "scores": {
+            "all": 21.1,
+            "line": 24.3
+        }
+    },
+    {
+        "model": "text-curie-001",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676777858,
+        "scores": {
+            "all": 24.0,
+            "line": 24.9
+        }
+    },
+    {
+        "model": "text-davinci-003",
+        "dataset": "outputs/all",
+        "dtype": "bfloat16",
+        "split": "train",
+        "time": 1676779691,
+        "scores": {
+            "all": 88.5,
+            "line": 85.8
+        }
+    }
+]
