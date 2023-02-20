@@ -1,0 +1,196 @@
+{
+  "results": [
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "GPT-3 style",
+      "acc": 0.7942238267148014,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_stderr": 0.024334053478024743
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "GPT-3 style",
+      "acc_norm": 0.8086642599277978,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_norm_stderr": 0.023677052322414453
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "MNLI crowdsource",
+      "acc": 0.8303249097472925,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_stderr": 0.022593241101707042
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "MNLI crowdsource",
+      "acc_norm": 0.8447653429602888,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_norm_stderr": 0.021797558224296024
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "based on the previous passage",
+      "acc": 0.8231046931407943,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_stderr": 0.022968421711280496
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "based on the previous passage",
+      "acc_norm": 0.8303249097472925,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_norm_stderr": 0.02259324110170705
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "can we infer",
+      "acc": 0.8050541516245487,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_stderr": 0.023845970444438896
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "can we infer",
+      "acc_norm": 0.8050541516245487,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_norm_stderr": 0.0238459704444389
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "does it follow that",
+      "acc": 0.8194945848375451,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_stderr": 0.02315067300016248
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "does it follow that",
+      "acc_norm": 0.8194945848375451,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_norm_stderr": 0.023150673000162485
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "does this imply",
+      "acc": 0.8158844765342961,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_stderr": 0.023329476711663553
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "does this imply",
+      "acc_norm": 0.8267148014440433,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_norm_stderr": 0.0227826401077742
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "guaranteed true",
+      "acc": 0.7689530685920578,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_stderr": 0.025371461122180767
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "guaranteed true",
+      "acc_norm": 0.8231046931407943,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_norm_stderr": 0.022968421711280492
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "justified in saying",
+      "acc": 0.7256317689530686,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_stderr": 0.026857804902852223
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "justified in saying",
+      "acc_norm": 0.7725631768953068,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_norm_stderr": 0.025231487301622734
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "must be true",
+      "acc": 0.8122743682310469,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_stderr": 0.023504911523892474
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "must be true",
+      "acc_norm": 0.8194945848375451,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_norm_stderr": 0.023150673000162467
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "should assume",
+      "acc": 0.8122743682310469,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_stderr": 0.023504911523892474
+    },
+    {
+      "task_name": "superglue_rte",
+      "prompt_name": "should assume",
+      "acc_norm": 0.8158844765342961,
+      "dataset_path": "super_glue",
+      "dataset_name": "rte",
+      "subset": null,
+      "acc_norm_stderr": 0.02332947671166356
+    }
+  ],
+  "config": {
+    "model": "hf-seq2seq",
+    "model_args": "pretrained=google/flan-t5-base",
+    "task_args": "",
+    "num_fewshot": 0,
+    "batch_size": 128,
+    "device": null,
+    "use_cache": false,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "seed": 1234
+  }
+}
