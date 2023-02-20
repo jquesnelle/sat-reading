@@ -669,5 +669,16 @@
             "all": 88.5,
             "line": 85.8
         }
+    },
+    {
+        "model": "text-davinci-003",
+        "dataset": "outputs/all-held-out",
+        "dtype": "bfloat16",
+        "split": "test",
+        "time": 1676859502,
+        "scores": {
+            "all": 94.8,
+            "line": 96.7
+        }
     }
 ]
